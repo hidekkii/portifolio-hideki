@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renan Hideki — Full-Stack Developer</title>
+  <meta name="description" content="Portfólio de Renan Hideki Hirata, desenvolvedor full-stack e estudante de Sistemas de Informação em Santos, SP.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230e0f11'/><text x='50' y='66' font-size='52' font-family='monospace' font-weight='700' text-anchor='middle' fill='%23f5a524'>rh</text></svg>">
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo"><span class="method">GET</span> /renan</a>
+    <nav>
+      <a href="#sobre">sobre</a>
+      <a href="#stack">stack</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span> 200 OK · aberto a oportunidades</p>
+        <h1>Renan<br>Hideki</h1>
+        <p class="role">Full-Stack Developer</p>
+        <p class="lead">
+          Estudante de Sistemas de Informação construindo APIs, automações e apps
+          — e aprendendo a colocar tudo isso de pé na nuvem.
+        </p>
+        <div class="cta">
+          <a href="#projetos" class="btn primary">ver projetos</a>
+          <a href="#contato" class="btn">falar comigo</a>
+        </div>
+      </div>
+
+      <div class="client" aria-label="Exemplo de requisição HTTP">
+        <div class="client-bar">
+          <span></span><span></span><span></span>
+          <p>api-client</p>
+        </div>
+        <div class="client-req">
+          <span class="method">GET</span>
+          <span class="url">/v1/devs/renan</span>
+          <span class="code" id="res-code">···</span>
+        </div>
+        <pre class="client-body" id="res-body" aria-live="polite"></pre>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <h2 class="section-title"><span class="method">GET</span> /sobre</h2>
+      <div class="about">
+        <div class="about-text">
+          <p>
+            Olá, me chamo <strong>Renan Hideki Hirata</strong>. Sou estudante de
+            Sistemas de Informação na <strong>Universidade Santa Cecília</strong>, com
+            forte interesse em programação e desenvolvimento de software,
+            atuando principalmente com <strong>C#, Java e SQL</strong>.
+          </p>
+          <p>
+            Gosto de criar soluções eficientes e com boa experiência para o usuário.
+            Hoje desenvolvo projetos acadêmicos e pessoais — de um API Gateway resiliente
+            em n8n a apps Android em Kotlin — e estou me capacitando em
+            <strong>cloud computing na AWS</strong>.
+          </p>
+        </div>
+        <dl class="facts">
+          <div><dt>local</dt><dd>Santos, SP</dd></div>
+          <div><dt>curso</dt><dd>Sistemas de Informação</dd></div>
+          <div><dt>faculdade</dt><dd>Univ. Santa Cecília</dd></div>
+          <div><dt>previsão</dt><dd>dez / 2027</dd></div>
+          <div><dt>foco</dt><dd>back-end · cloud</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <h2 class="section-title"><span class="method">GET</span> /stack</h2>
+      <div class="stack">
+        <div class="stack-group">
+          <h3>linguagens</h3>
+          <ul><li>C#</li><li>Java</li><li>JavaScript</li><li>Kotlin</li><li>SQL</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>back-end</h3>
+          <ul><li>.NET</li><li>ASP.NET</li><li>Node.js</li><li>n8n</li><li>REST APIs</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>front &amp; mobile</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Android</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>dados &amp; infra</h3>
+          <ul><li>SQL Server</li><li>MySQL</li><li>Redis</li><li>AWS S3</li><li>CloudFront</li><li>Git / GitHub</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <h2 class="section-title"><span class="method">GET</span> /projetos</h2>
+      <div class="projects">
+        <article class="project featured">
+          <div class="project-head">
+            <span class="tag">n8n · Redis</span>
+            <span class="num">01</span>
+          </div>
+          <h3>API Gateway — PZaaS</h3>
+          <p>
+            Ponto único de entrada de uma pizzaria construída como sistema distribuído
+            pela turma. Autentica por <code>x-api-key</code>, tem modo manutenção, retry,
+            fallback A→B no pagamento e degrada com <code>503</code> padronizado.
+          </p>
+          <ul class="chips"><li>n8n</li><li>Redis</li><li>REST</li><li>resiliência</li></ul>
+          <div class="links">
+            <a href="https://github.com/hidekkii/apigateway-pzaas" target="_blank" rel="noopener">código ↗</a>
+            <a href="https://apigateway-doc.vercel.app/" target="_blank" rel="noopener">documentação ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="tag">jogo · AWS</span>
+            <span class="num">02</span>
+          </div>
+          <h3>Minigame Orbital</h3>
+          <p>
+            Jogo arcade de um botão só: pule entre órbitas sem cair. Publicado
+            como site estático no Amazon S3 com CloudFront na frente.
+          </p>
+          <ul class="chips"><li>HTML</li><li>JavaScript</li><li>S3</li><li>CloudFront</li></ul>
+          <div class="links">
+            <a href="https://d20580lqom8vrn.cloudfront.net" target="_blank" rel="noopener">jogar ↗</a>
+            <a href="https://github.com/hidekkii/minigame-orbital" target="_blank" rel="noopener">código ↗</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <span class="tag">android</span>
+            <span class="num">03</span>
+          </div>
+          <h3>Apps Android</h3>
+          <p>
+            Série de apps em Kotlin da disciplina de Desenvolvimento para Dispositivos
+            Móveis — trabalhos práticos e exercícios feitos ao longo do curso.
+          </p>
+          <ul class="chips"><li>Kotlin</li><li>Android</li></ul>
+          <div class="links">
+            <a href="https://github.com/hidekkii/AppLista-Aula05" target="_blank" rel="noopener">AppLista ↗</a>
+            <a href="https://github.com/hidekkii?tab=repositories&amp;language=kotlin" target="_blank" rel="noopener">todos ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section contact">
+      <h2 class="section-title"><span class="method post">POST</span> /contato</h2>
+      <p class="contact-lead">Tem uma vaga, um projeto ou só quer trocar uma ideia? Manda mensagem.</p>
+      <div class="contact-links">
+        <a href="mailto:renanhideki12@gmail.com" class="contact-card">
+          <span class="k">email</span>
+          <span class="v">renanhideki12@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/renanhidekidev" target="_blank" rel="noopener" class="contact-card">
+          <span class="k">linkedin</span>
+          <span class="v">/in/renanhidekidev</span>
+        </a>
+        <a href="https://github.com/hidekkii" target="_blank" rel="noopener" class="contact-card">
+          <span class="k">github</span>
+          <span class="v">@hidekkii</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Renan Hideki Hirata · feito à mão com HTML, CSS e JS</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
