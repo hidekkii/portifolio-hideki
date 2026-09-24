@@ -2,7 +2,7 @@
 
 > **Acesse o site:** https://hidekkii.github.io/portifolio-hideki/
 
-Portfólio pessoal de **Renan Hideki Hirata**, desenvolvedor full-stack e estudante de Sistemas de Informação na Universidade Santa Cecília.
+Portfólio pessoal de **Renan Hideki Hirata**, desenvolvedor full-stack e estudante de Sistemas de Informação.
 
 ## O que tem no site
 
